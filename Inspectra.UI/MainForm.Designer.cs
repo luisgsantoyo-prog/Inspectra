@@ -40,6 +40,7 @@
             windowToolStripMenuItem = new ToolStripMenuItem();
             helpToolStripMenuItem = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
+            equipmentToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,6 +62,7 @@
             // 
             // assetsToolStripMenuItem
             // 
+            assetsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { equipmentToolStripMenuItem });
             assetsToolStripMenuItem.Name = "assetsToolStripMenuItem";
             assetsToolStripMenuItem.Size = new Size(64, 24);
             assetsToolStripMenuItem.Text = "Assets";
@@ -116,11 +118,18 @@
             // statusStrip1
             // 
             statusStrip1.ImageScalingSize = new Size(20, 20);
-            statusStrip1.Location = new Point(0, 629);
+            statusStrip1.Location = new Point(0, 631);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Size = new Size(1182, 24);
+            statusStrip1.Size = new Size(1182, 22);
             statusStrip1.TabIndex = 2;
             statusStrip1.Text = "statusStrip1";
+            // 
+            // equipmentToolStripMenuItem
+            // 
+            equipmentToolStripMenuItem.Name = "equipmentToolStripMenuItem";
+            equipmentToolStripMenuItem.Size = new Size(224, 26);
+            equipmentToolStripMenuItem.Text = "Equipment";
+            equipmentToolStripMenuItem.Click += equipmentToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -156,5 +165,6 @@
         private ToolStripMenuItem windowToolStripMenuItem;
         private ToolStripMenuItem helpToolStripMenuItem;
         private StatusStrip statusStrip1;
+        private ToolStripMenuItem equipmentToolStripMenuItem;
     }
 }
