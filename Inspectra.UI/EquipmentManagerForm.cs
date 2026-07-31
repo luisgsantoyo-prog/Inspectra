@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Inspectra.UI
 {
-    public partial class EquipmentForm : Form
+    public partial class EquipmentManagerForm : Form
     {
-        public EquipmentForm()
+        public EquipmentManagerForm()
         {
             InitializeComponent();
         }

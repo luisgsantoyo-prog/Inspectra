@@ -1,6 +1,6 @@
 ﻿namespace Inspectra.UI
 {
-    partial class EquipmentForm
+    partial class EquipmentManagerForm
     {
         /// <summary>
         /// Required designer variable.

@@ -2,7 +2,7 @@ namespace Inspectra.UI
 {
     public partial class MainForm : Form
     {
-        private EquipmentForm? equipmentForm;
+        private EquipmentManagerForm? equipmentManagerForm;
         public MainForm()
         {
             InitializeComponent();
@@ -10,15 +10,18 @@ namespace Inspectra.UI
 
         private void equipmentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (equipmentForm == null || equipmentForm.IsDisposed)
+            if (equipmentManagerForm == null || equipmentManagerForm.IsDisposed)
             {
-                equipmentForm = new EquipmentForm();
+                equipmentManagerForm = new EquipmentManagerForm();
 
-                equipmentForm.MdiParent = this;
-                equipmentForm.WindowState = FormWindowState.Maximized;
-                equipmentForm.Show();
+                equipmentManagerForm.MdiParent = this;
+                equipmentManagerForm.WindowState = FormWindowState.Maximized;
+                equipmentManagerForm.Show();
             }
-
+        else
+            { 
+                equipmentManagerForm.Activate(); 
+            }
         }
     }
 }
